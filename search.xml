@@ -87,37 +87,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[python collections模块]]></title>
-      <url>/2017/04/04/collections%E4%BD%BF%E7%94%A8/</url>
-      <content type="html"><![CDATA[<h2 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h2><p>namedtuple</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> namedtupule</div><div class="line"></div><div class="line">Point = namedtuple(<span class="string">'Point'</span>, [<span class="string">'x'</span>, <span class="string">'y'</span>])</div><div class="line">p = Point(<span class="number">1</span>, <span class="number">2</span>)</div><div class="line"></div><div class="line"><span class="keyword">print</span> p.x</div><div class="line"><span class="keyword">print</span> p.y</div></pre></td></tr></table></figure>
-<h2 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h2><p>deque是双向链表实现的，相比list具有更高的插入和删除效率。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> deque</div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q = deque([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="string">'x'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.appendleft(<span class="string">'y'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="string">'y'</span>, <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'x'</span>])</div></pre></td></tr></table></figure>
-<h2 id="defaultdict"><a href="#defaultdict" class="headerlink" title="defaultdict"></a>defaultdict</h2><p>在使用普通的dict类型时，我们在取值时需要判断key是否存在，如果我们希望当一个key不存在时返回默认值，我们可以使用defaultdict。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>dd = defaultdict(lamba: <span class="string">'No key'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>dd[<span class="string">'a'</span>] = <span class="string">'A'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> dd[<span class="string">'a'</span>]</div><div class="line"><span class="string">'A'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> dd[<span class="string">'b'</span>]</div><div class="line"><span class="string">'No key'</span></div></pre></td></tr></table></figure>
-<h2 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h2><p>OrderedDIct见名知意，就是key是有序的。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>od = OrderDict([(<span class="string">'z'</span>, <span class="number">1</span>), (<span class="string">'y'</span>, <span class="number">2</span>), (<span class="string">'x'</span>, <span class="number">3</span>)])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>od.keys()</div><div class="line">[<span class="string">'z'</span>, <span class="string">'y'</span>, <span class="string">'x'</span>]</div></pre></td></tr></table></figure>
-<p>需要注意的是，OrderedDict key是按插入的顺序排列的，而不是字符串大小。</p>
-<h2 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h2><p> Counter是一个简单的计数器。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>c = Counter()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> ch <span class="keyword">in</span> <span class="string">"aaaabb"</span>:</div><div class="line">...		c[ch] += <span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>c</div><div class="line">Counter(&#123;<span class="string">'a'</span>: <span class="number">4</span>, <span class="string">'b'</span>: <span class="number">2</span>&#125;)</div></pre></td></tr></table></figure>
-]]></content>
-      
-        <categories>
-            
-            <category> python </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> python </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[ipa镜像制作]]></title>
       <url>/2017/04/04/ironic%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</url>
       <content type="html"><![CDATA[<h2 id="镜像介绍"><a href="#镜像介绍" class="headerlink" title="镜像介绍"></a>镜像介绍</h2><p>ironic部署需要两组镜像，一组是deploy镜像，另一组是user镜像，其中deploy镜像包括ipa服务。user镜像又分为whole disk image和partition image，其中whole disk image 是带bootloader和分区表的。</p>
@@ -181,18 +150,19 @@
     </entry>
     
     <entry>
-      <title><![CDATA[异步I/O]]></title>
-      <url>/2017/04/02/%E5%BC%82%E6%AD%A5IO/</url>
-      <content type="html"><![CDATA[<h2 id="Unix-IO模型"><a href="#Unix-IO模型" class="headerlink" title="Unix IO模型"></a>Unix IO模型</h2><p>Unix系统有5种IO模型，我们先看看最常见的IO模型－阻塞式I/O模型</p>
-<h3 id="阻塞式I-O模型"><a href="#阻塞式I-O模型" class="headerlink" title="阻塞式I/O模型"></a>阻塞式I/O模型</h3><p><img src="/img/io_01.png" alt="io_01"></p>
-<p>我们最容易想到的就是阻塞式I/O模型，这种模型实现简单，但是效率低下。</p>
-<h3 id="非阻塞I-O模型"><a href="#非阻塞I-O模型" class="headerlink" title="非阻塞I/O模型"></a>非阻塞I/O模型</h3><p><img src="/img/io_02.png" alt="io_02"></p>
-<h3 id="I-O复用模型"><a href="#I-O复用模型" class="headerlink" title="I/O复用模型"></a>I/O复用模型</h3><p><img src="/img/io_03.png" alt="io_03"></p>
-<h3 id="信号驱动式I-O模型"><a href="#信号驱动式I-O模型" class="headerlink" title="信号驱动式I/O模型"></a>信号驱动式I/O模型</h3><p><img src="/img/io_04.png" alt="io_04"></p>
-<h3 id="异步I-O模型"><a href="#异步I-O模型" class="headerlink" title="异步I/O模型"></a>异步I/O模型</h3><p><img src="/img/io_05.png" alt="io_05"></p>
-<h3 id="各种I-O模型的比较"><a href="#各种I-O模型的比较" class="headerlink" title="各种I/O模型的比较"></a>各种I/O模型的比较</h3><p>对比上面的几种模型，前4种模型的区别主要在于第一阶段，它们第二阶段都是一样的：在数据从内核态复制到用户态时，进程处于阻塞状态。相反，异步I/O在两个阶段都处于非阻塞状态。</p>
-<h2 id="为什么使用异步IO"><a href="#为什么使用异步IO" class="headerlink" title="为什么使用异步IO"></a>为什么使用异步IO</h2><p>例如，你要写一个爬虫程序（I/O密集型），如果采用同步I/O。如果采用最简单的阻塞式I/O，可能会花很长时间才能完成，而这期间，进程大部分时间都是阻塞的。你可能会说可以使用多线程活着是多进程，这也确实是一个方法。但是一个系统的资源是有限的，不能创建无限个线程。且大部分系统socket数量有限制，也不能创建无数了socket连接。</p>
-<p>所以在I/O密集型程序中，最好使用异步I/O，异步I/O的思想是在一个线程里处理问题，遇到I/O操作，我可以继续处理其它问题，等到内核把数据获取完了并拷贝到应用程序，再回过头来继续处理。</p>
+      <title><![CDATA[python collections模块]]></title>
+      <url>/2017/04/04/collections%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<h2 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h2><p>namedtuple</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> namedtupule</div><div class="line"></div><div class="line">Point = namedtuple(<span class="string">'Point'</span>, [<span class="string">'x'</span>, <span class="string">'y'</span>])</div><div class="line">p = Point(<span class="number">1</span>, <span class="number">2</span>)</div><div class="line"></div><div class="line"><span class="keyword">print</span> p.x</div><div class="line"><span class="keyword">print</span> p.y</div></pre></td></tr></table></figure>
+<h2 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h2><p>deque是双向链表实现的，相比list具有更高的插入和删除效率。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> deque</div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q = deque([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="string">'x'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.appendleft(<span class="string">'y'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="string">'y'</span>, <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'x'</span>])</div></pre></td></tr></table></figure>
+<h2 id="defaultdict"><a href="#defaultdict" class="headerlink" title="defaultdict"></a>defaultdict</h2><p>在使用普通的dict类型时，我们在取值时需要判断key是否存在，如果我们希望当一个key不存在时返回默认值，我们可以使用defaultdict。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>dd = defaultdict(lamba: <span class="string">'No key'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>dd[<span class="string">'a'</span>] = <span class="string">'A'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> dd[<span class="string">'a'</span>]</div><div class="line"><span class="string">'A'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> dd[<span class="string">'b'</span>]</div><div class="line"><span class="string">'No key'</span></div></pre></td></tr></table></figure>
+<h2 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h2><p>OrderedDIct见名知意，就是key是有序的。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>od = OrderDict([(<span class="string">'z'</span>, <span class="number">1</span>), (<span class="string">'y'</span>, <span class="number">2</span>), (<span class="string">'x'</span>, <span class="number">3</span>)])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>od.keys()</div><div class="line">[<span class="string">'z'</span>, <span class="string">'y'</span>, <span class="string">'x'</span>]</div></pre></td></tr></table></figure>
+<p>需要注意的是，OrderedDict key是按插入的顺序排列的，而不是字符串大小。</p>
+<h2 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h2><p> Counter是一个简单的计数器。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>c = Counter()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> ch <span class="keyword">in</span> <span class="string">"aaaabb"</span>:</div><div class="line">...		c[ch] += <span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>c</div><div class="line">Counter(&#123;<span class="string">'a'</span>: <span class="number">4</span>, <span class="string">'b'</span>: <span class="number">2</span>&#125;)</div></pre></td></tr></table></figure>
 ]]></content>
       
         <categories>
@@ -204,7 +174,7 @@
         
         <tags>
             
-            <tag> I/O </tag>
+            <tag> python </tag>
             
         </tags>
         
@@ -236,6 +206,36 @@
         <tags>
             
             <tag> packstack </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[异步I/O]]></title>
+      <url>/2017/04/02/%E5%BC%82%E6%AD%A5IO/</url>
+      <content type="html"><![CDATA[<h2 id="Unix-IO模型"><a href="#Unix-IO模型" class="headerlink" title="Unix IO模型"></a>Unix IO模型</h2><p>Unix系统有5种IO模型，我们先看看最常见的IO模型－阻塞式I/O模型</p>
+<h3 id="阻塞式I-O模型"><a href="#阻塞式I-O模型" class="headerlink" title="阻塞式I/O模型"></a>阻塞式I/O模型</h3><p><img src="/img/io_01.png" alt="io_01"></p>
+<p>我们最容易想到的就是阻塞式I/O模型，这种模型实现简单，但是效率低下。</p>
+<h3 id="非阻塞I-O模型"><a href="#非阻塞I-O模型" class="headerlink" title="非阻塞I/O模型"></a>非阻塞I/O模型</h3><p><img src="/img/io_02.png" alt="io_02"></p>
+<h3 id="I-O复用模型"><a href="#I-O复用模型" class="headerlink" title="I/O复用模型"></a>I/O复用模型</h3><p><img src="/img/io_03.png" alt="io_03"></p>
+<h3 id="信号驱动式I-O模型"><a href="#信号驱动式I-O模型" class="headerlink" title="信号驱动式I/O模型"></a>信号驱动式I/O模型</h3><p><img src="/img/io_04.png" alt="io_04"></p>
+<h3 id="异步I-O模型"><a href="#异步I-O模型" class="headerlink" title="异步I/O模型"></a>异步I/O模型</h3><p><img src="/img/io_05.png" alt="io_05"></p>
+<h3 id="各种I-O模型的比较"><a href="#各种I-O模型的比较" class="headerlink" title="各种I/O模型的比较"></a>各种I/O模型的比较</h3><p>对比上面的几种模型，前4种模型的区别主要在于第一阶段，它们第二阶段都是一样的：在数据从内核态复制到用户态时，进程处于阻塞状态。相反，异步I/O在两个阶段都处于非阻塞状态。</p>
+<h2 id="为什么使用异步IO"><a href="#为什么使用异步IO" class="headerlink" title="为什么使用异步IO"></a>为什么使用异步IO</h2><p>例如，你要写一个爬虫程序（I/O密集型），如果采用同步I/O。如果采用最简单的阻塞式I/O，可能会花很长时间才能完成，而这期间，进程大部分时间都是阻塞的。你可能会说可以使用多线程活着是多进程，这也确实是一个方法。但是一个系统的资源是有限的，不能创建无限个线程。且大部分系统socket数量有限制，也不能创建无数了socket连接。</p>
+<p>所以在I/O密集型程序中，最好使用异步I/O，异步I/O的思想是在一个线程里处理问题，遇到I/O操作，我可以继续处理其它问题，等到内核把数据获取完了并拷贝到应用程序，再回过头来继续处理。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> python </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> I/O </tag>
             
         </tags>
         
@@ -295,6 +295,88 @@
     </entry>
     
     <entry>
+      <title><![CDATA[python with语句]]></title>
+      <url>/2017/03/11/python%20with%E8%AF%AD%E5%8F%A5/</url>
+      <content type="html"><![CDATA[<h1 id="python-with语句"><a href="#python-with语句" class="headerlink" title="python with语句"></a>python with语句</h1><p>with 语句是用来替代try-except-finall语句的，使代码更加简洁。with语句的基本语法如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> context [<span class="keyword">as</span> var]:</div><div class="line">    with_suite</div></pre></td></tr></table></figure>
+<p>context表达式返回的是一个对象，var用来保存context返回的对象，可以是单个返回值，也可以是元组。</p>
+<p>with 语句的实质是上下文管理。</p>
+<ol>
+<li>上下文管理协议：包含方法：<code>__enter__()</code>和<code>__exit__()</code>，支持该协议的对象要实现这两个方法。</li>
+<li>上下文管理器：定义执行with语句时要建立的运行时上下文，负责执行with语句块上下文中的进入与退出操作。</li>
+</ol>
+<p>with虽然可以</p>
+]]></content>
+      
+        <categories>
+            
+            <category> python </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[mac mysql启动配置]]></title>
+      <url>/2017/03/11/mac%E4%B8%8B%E5%90%AF%E5%8A%A8mysql/</url>
+      <content type="html"><![CDATA[<p>mac下使用mysql有点蛋疼，每次都要找命令。可能不同版本或者安装方式mysql的位置不太一样，可以使用<code>locate mysql.server</code>查找一下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># start</div><div class="line">sudo /usr/local/bin/mysql.server start</div><div class="line"></div><div class="line"># stop</div><div class="line">sudo /usr/local/bin/mysql.server stop</div><div class="line"></div><div class="line"># restart</div><div class="line">sudo /usr/local/bin/mysql.server restart</div></pre></td></tr></table></figure>
+<p>如果不想每次都敲这么一长串的命令，可以使用alias。在~/.bash_profile中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">alias mysqlstart=&apos;sudo /usr/local/bin/mysql.server start&apos;</div><div class="line">alias mysqlstop=&apos;sudo /usr/local/bin/mysql.server stop&apos;</div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> mac </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> mysql </tag>
+            
+            <tag> mac </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[mac使用]]></title>
+      <url>/2017/03/11/mac%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><ul>
+<li>全屏截图:<code>Command-Shift-3</code></li>
+<li>指定区域截图:<code>Command-Shift-4</code></li>
+</ul>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><ul>
+<li>删除文件:<code>Command-Del</code></li>
+<li>清空废纸篓:<code>Shift-Command-Del</code></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> mac </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> mac </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[ironic inspector流程]]></title>
       <url>/2017/03/11/ironic-inspector%E6%B5%81%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h1 id="inspector流程"><a href="#inspector流程" class="headerlink" title="inspector流程"></a>inspector流程</h1><h2 id="ironic-处理阶段"><a href="#ironic-处理阶段" class="headerlink" title="ironic 处理阶段"></a>ironic 处理阶段</h2><p>首先我们通过ironic的api，将node节点状态设置为manage，然后再设置为inspect。</p>
@@ -332,31 +414,6 @@
         <tags>
             
             <tag> ironic </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[mac mysql启动配置]]></title>
-      <url>/2017/03/11/mac%E4%B8%8B%E5%90%AF%E5%8A%A8mysql/</url>
-      <content type="html"><![CDATA[<p>mac下使用mysql有点蛋疼，每次都要找命令。可能不同版本或者安装方式mysql的位置不太一样，可以使用<code>locate mysql.server</code>查找一下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># start</div><div class="line">sudo /usr/local/bin/mysql.server start</div><div class="line"></div><div class="line"># stop</div><div class="line">sudo /usr/local/bin/mysql.server stop</div><div class="line"></div><div class="line"># restart</div><div class="line">sudo /usr/local/bin/mysql.server restart</div></pre></td></tr></table></figure>
-<p>如果不想每次都敲这么一长串的命令，可以使用alias。在~/.bash_profile中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">alias mysqlstart=&apos;sudo /usr/local/bin/mysql.server start&apos;</div><div class="line">alias mysqlstop=&apos;sudo /usr/local/bin/mysql.server stop&apos;</div></pre></td></tr></table></figure>]]></content>
-      
-        <categories>
-            
-            <category> mac </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> mysql </tag>
-            
-            <tag> mac </tag>
             
         </tags>
         
@@ -497,63 +554,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[mac使用]]></title>
-      <url>/2017/03/11/mac%E4%BD%BF%E7%94%A8/</url>
-      <content type="html"><![CDATA[<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><ul>
-<li>全屏截图:<code>Command-Shift-3</code></li>
-<li>指定区域截图:<code>Command-Shift-4</code></li>
-</ul>
-<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><ul>
-<li>删除文件:<code>Command-Del</code></li>
-<li>清空废纸篓:<code>Shift-Command-Del</code></li>
-</ul>
-]]></content>
-      
-        <categories>
-            
-            <category> mac </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> mac </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[python with语句]]></title>
-      <url>/2017/03/11/python%20with%E8%AF%AD%E5%8F%A5/</url>
-      <content type="html"><![CDATA[<h1 id="python-with语句"><a href="#python-with语句" class="headerlink" title="python with语句"></a>python with语句</h1><p>with 语句是用来替代try-except-finall语句的，使代码更加简洁。with语句的基本语法如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> context [<span class="keyword">as</span> var]:</div><div class="line">    with_suite</div></pre></td></tr></table></figure>
-<p>context表达式返回的是一个对象，var用来保存context返回的对象，可以是单个返回值，也可以是元组。</p>
-<p>with 语句的实质是上下文管理。</p>
-<ol>
-<li>上下文管理协议：包含方法：<code>__enter__()</code>和<code>__exit__()</code>，支持该协议的对象要实现这两个方法。</li>
-<li>上下文管理器：定义执行with语句时要建立的运行时上下文，负责执行with语句块上下文中的进入与退出操作。</li>
-</ol>
-<p>with虽然可以</p>
-]]></content>
-      
-        <categories>
-            
-            <category> python </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> python </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[leetcode Add Two Numbers]]></title>
       <url>/2016/09/11/leetcode-002/</url>
       <content type="html"><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>You are given two linked lists representing two non-negative numbers.The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
@@ -578,6 +578,29 @@
         <tags>
             
             <tag> leetcode </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[openstack代码提交]]></title>
+      <url>/2016/09/07/%E5%90%91%E7%A4%BE%E5%8C%BA%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81/</url>
+      <content type="html"><![CDATA[<h1 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h1><h2 id="git-review安装"><a href="#git-review安装" class="headerlink" title="git review安装"></a>git review安装</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install git-review</div></pre></td></tr></table></figure>
+<h2 id="git-配置"><a href="#git-配置" class="headerlink" title="git 配置"></a>git 配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># 这里的名字必须是gerrit的名字</div><div class="line">git config gitreview.username lee</div><div class="line"></div><div class="line"># ssh用不了，使用https方式提交</div><div class="line">git config gitreview.scheme https</div><div class="line">git config gitreview.port 443</div><div class="line"></div><div class="line">git review -s -v</div></pre></td></tr></table></figure>
+<h2 id="提交代码-1"><a href="#提交代码-1" class="headerlink" title="提交代码"></a>提交代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add --all</div><div class="line">git commit -m &quot;commit msg&quot;</div><div class="line"></div><div class="line">git review</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> openstack </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> openstack </tag>
             
         </tags>
         
@@ -620,29 +643,6 @@
         <tags>
             
             <tag> leetcode </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[openstack代码提交]]></title>
-      <url>/2016/09/07/%E5%90%91%E7%A4%BE%E5%8C%BA%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81/</url>
-      <content type="html"><![CDATA[<h1 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h1><h2 id="git-review安装"><a href="#git-review安装" class="headerlink" title="git review安装"></a>git review安装</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install git-review</div></pre></td></tr></table></figure>
-<h2 id="git-配置"><a href="#git-配置" class="headerlink" title="git 配置"></a>git 配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># 这里的名字必须是gerrit的名字</div><div class="line">git config gitreview.username lee</div><div class="line"></div><div class="line"># ssh用不了，使用https方式提交</div><div class="line">git config gitreview.scheme https</div><div class="line">git config gitreview.port 443</div><div class="line"></div><div class="line">git review -s -v</div></pre></td></tr></table></figure>
-<h2 id="提交代码-1"><a href="#提交代码-1" class="headerlink" title="提交代码"></a>提交代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add --all</div><div class="line">git commit -m &quot;commit msg&quot;</div><div class="line"></div><div class="line">git review</div></pre></td></tr></table></figure>
-]]></content>
-      
-        <categories>
-            
-            <category> openstack </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> openstack </tag>
             
         </tags>
         
