@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://leetpy.github.io/"/>
   <updated>2017-04-16T12:26:13.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://leetpy.github.io/</id>
   
   <author>
     <name>feichai</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>《一个人的朝圣》读书笔记</title>
-    <link href="http://yoursite.com/2017/04/16/reading/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3/"/>
-    <id>http://yoursite.com/2017/04/16/reading/一个人的朝圣/</id>
+    <link href="https://leetpy.github.io/2017/04/16/reading/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3/"/>
+    <id>https://leetpy.github.io/2017/04/16/reading/一个人的朝圣/</id>
     <published>2017-04-16T08:02:16.000Z</published>
     <updated>2017-04-16T12:26:13.000Z</updated>
     
@@ -33,8 +33,8 @@
   
   <entry>
     <title>docker常用命令</title>
-    <link href="http://yoursite.com/2017/04/16/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2017/04/16/docker常用命令/</id>
+    <link href="https://leetpy.github.io/2017/04/16/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://leetpy.github.io/2017/04/16/docker常用命令/</id>
     <published>2017-04-16T07:24:05.000Z</published>
     <updated>2017-04-16T07:51:20.000Z</updated>
     
@@ -46,14 +46,14 @@
     </summary>
     
     
-      <category term="docker" scheme="http://yoursite.com/tags/docker/"/>
+      <category term="docker" scheme="https://leetpy.github.io/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>git常用命令</title>
-    <link href="http://yoursite.com/2017/04/16/git%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2017/04/16/git命令/</id>
+    <link href="https://leetpy.github.io/2017/04/16/git%E5%91%BD%E4%BB%A4/"/>
+    <id>https://leetpy.github.io/2017/04/16/git命令/</id>
     <published>2017-04-16T02:49:33.000Z</published>
     <updated>2017-04-16T08:31:33.000Z</updated>
     
@@ -64,17 +64,17 @@
     
     </summary>
     
-      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+      <category term="git" scheme="https://leetpy.github.io/categories/git/"/>
     
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="git" scheme="https://leetpy.github.io/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>Hexo使用</title>
-    <link href="http://yoursite.com/2017/04/16/hello-world/"/>
-    <id>http://yoursite.com/2017/04/16/hello-world/</id>
+    <link href="https://leetpy.github.io/2017/04/16/hello-world/"/>
+    <id>https://leetpy.github.io/2017/04/16/hello-world/</id>
     <published>2017-04-16T02:39:05.000Z</published>
     <updated>2017-04-16T08:56:53.000Z</updated>
     
@@ -89,8 +89,8 @@
   
   <entry>
     <title>ipa镜像制作</title>
-    <link href="http://yoursite.com/2017/04/04/ironic%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/"/>
-    <id>http://yoursite.com/2017/04/04/ironic镜像制作/</id>
+    <link href="https://leetpy.github.io/2017/04/04/ironic%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/"/>
+    <id>https://leetpy.github.io/2017/04/04/ironic镜像制作/</id>
     <published>2017-04-03T16:00:00.000Z</published>
     <updated>2017-04-17T13:32:49.000Z</updated>
     
@@ -100,17 +100,17 @@
     
     </summary>
     
-      <category term="openstack" scheme="http://yoursite.com/categories/openstack/"/>
+      <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
     
     
-      <category term="ipa" scheme="http://yoursite.com/tags/ipa/"/>
+      <category term="ipa" scheme="https://leetpy.github.io/tags/ipa/"/>
     
   </entry>
   
   <entry>
     <title>ironic代码走读</title>
-    <link href="http://yoursite.com/2017/04/04/ironic%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B/"/>
-    <id>http://yoursite.com/2017/04/04/ironic调用流程/</id>
+    <link href="https://leetpy.github.io/2017/04/04/ironic%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B/"/>
+    <id>https://leetpy.github.io/2017/04/04/ironic调用流程/</id>
     <published>2017-04-03T16:00:00.000Z</published>
     <updated>2017-04-16T07:10:44.000Z</updated>
     
@@ -120,17 +120,17 @@
     
     </summary>
     
-      <category term="openstack" scheme="http://yoursite.com/categories/openstack/"/>
+      <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
     
     
-      <category term="ironic" scheme="http://yoursite.com/tags/ironic/"/>
+      <category term="ironic" scheme="https://leetpy.github.io/tags/ironic/"/>
     
   </entry>
   
   <entry>
     <title>python collections模块</title>
-    <link href="http://yoursite.com/2017/04/04/collections%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/04/04/collections使用/</id>
+    <link href="https://leetpy.github.io/2017/04/04/collections%E4%BD%BF%E7%94%A8/"/>
+    <id>https://leetpy.github.io/2017/04/04/collections使用/</id>
     <published>2017-04-03T16:00:00.000Z</published>
     <updated>2017-04-16T07:11:35.000Z</updated>
     
@@ -140,37 +140,17 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>packstack安装openstack</title>
-    <link href="http://yoursite.com/2017/04/02/packstack%E5%AE%89%E8%A3%85openstack/"/>
-    <id>http://yoursite.com/2017/04/02/packstack安装openstack/</id>
-    <published>2017-04-02T08:05:14.000Z</published>
-    <updated>2017-04-16T07:18:47.000Z</updated>
-    
-    <summary type="html">
-    
-      packstack安装openstack.
-    
-    </summary>
-    
-      <category term="openstack" scheme="http://yoursite.com/categories/openstack/"/>
-    
-    
-      <category term="packstack" scheme="http://yoursite.com/tags/packstack/"/>
+      <category term="python" scheme="https://leetpy.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>异步I/O</title>
-    <link href="http://yoursite.com/2017/04/02/%E5%BC%82%E6%AD%A5IO/"/>
-    <id>http://yoursite.com/2017/04/02/异步IO/</id>
+    <link href="https://leetpy.github.io/2017/04/02/%E5%BC%82%E6%AD%A5IO/"/>
+    <id>https://leetpy.github.io/2017/04/02/异步IO/</id>
     <published>2017-04-02T08:05:14.000Z</published>
     <updated>2017-04-16T07:05:06.000Z</updated>
     
@@ -180,17 +160,37 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
     
     
-      <category term="I/O" scheme="http://yoursite.com/tags/I-O/"/>
+      <category term="I/O" scheme="https://leetpy.github.io/tags/I-O/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>packstack安装openstack</title>
+    <link href="https://leetpy.github.io/2017/04/02/packstack%E5%AE%89%E8%A3%85openstack/"/>
+    <id>https://leetpy.github.io/2017/04/02/packstack安装openstack/</id>
+    <published>2017-04-02T08:05:14.000Z</published>
+    <updated>2017-04-16T07:18:47.000Z</updated>
+    
+    <summary type="html">
+    
+      packstack安装openstack.
+    
+    </summary>
+    
+      <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
+    
+    
+      <category term="packstack" scheme="https://leetpy.github.io/tags/packstack/"/>
     
   </entry>
   
   <entry>
     <title>ironic常用链接</title>
-    <link href="http://yoursite.com/2017/03/28/ironic%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/"/>
-    <id>http://yoursite.com/2017/03/28/ironic常用链接/</id>
+    <link href="https://leetpy.github.io/2017/03/28/ironic%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/"/>
+    <id>https://leetpy.github.io/2017/03/28/ironic常用链接/</id>
     <published>2017-03-28T08:05:14.000Z</published>
     <updated>2017-04-16T02:49:33.000Z</updated>
     
@@ -200,17 +200,17 @@
     
     </summary>
     
-      <category term="openstack" scheme="http://yoursite.com/categories/openstack/"/>
+      <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
     
     
-      <category term="ironic" scheme="http://yoursite.com/tags/ironic/"/>
+      <category term="ironic" scheme="https://leetpy.github.io/tags/ironic/"/>
     
   </entry>
   
   <entry>
     <title>常用shell</title>
-    <link href="http://yoursite.com/2017/03/12/%E5%B8%B8%E7%94%A8shell/"/>
-    <id>http://yoursite.com/2017/03/12/常用shell/</id>
+    <link href="https://leetpy.github.io/2017/03/12/%E5%B8%B8%E7%94%A8shell/"/>
+    <id>https://leetpy.github.io/2017/03/12/常用shell/</id>
     <published>2017-03-11T16:00:00.000Z</published>
     <updated>2017-04-17T13:19:48.000Z</updated>
     
@@ -220,37 +220,17 @@
     
     </summary>
     
-      <category term="shell" scheme="http://yoursite.com/categories/shell/"/>
+      <category term="shell" scheme="https://leetpy.github.io/categories/shell/"/>
     
     
-      <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python with语句</title>
-    <link href="http://yoursite.com/2017/03/11/python%20with%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://yoursite.com/2017/03/11/python with语句/</id>
-    <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-04-16T07:06:27.000Z</updated>
-    
-    <summary type="html">
-    
-      介绍了python测试框架nose的基本用法.
-    
-    </summary>
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="shell" scheme="https://leetpy.github.io/tags/shell/"/>
     
   </entry>
   
   <entry>
     <title>mac mysql启动配置</title>
-    <link href="http://yoursite.com/2017/03/11/mac%E4%B8%8B%E5%90%AF%E5%8A%A8mysql/"/>
-    <id>http://yoursite.com/2017/03/11/mac下启动mysql/</id>
+    <link href="https://leetpy.github.io/2017/03/11/mac%E4%B8%8B%E5%90%AF%E5%8A%A8mysql/"/>
+    <id>https://leetpy.github.io/2017/03/11/mac下启动mysql/</id>
     <published>2017-03-11T08:05:14.000Z</published>
     <updated>2017-03-11T13:56:35.000Z</updated>
     
@@ -260,79 +240,19 @@
     
     </summary>
     
-      <category term="mac" scheme="http://yoursite.com/categories/mac/"/>
+      <category term="mac" scheme="https://leetpy.github.io/categories/mac/"/>
     
     
-      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+      <category term="mysql" scheme="https://leetpy.github.io/tags/mysql/"/>
     
-      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mac使用</title>
-    <link href="http://yoursite.com/2017/03/11/mac%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/03/11/mac使用/</id>
-    <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-04-02T07:54:47.000Z</updated>
-    
-    <summary type="html">
-    
-      mac使用.
-    
-    </summary>
-    
-      <category term="mac" scheme="http://yoursite.com/categories/mac/"/>
-    
-    
-      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ironic inspector流程</title>
-    <link href="http://yoursite.com/2017/03/11/ironic-inspector%E6%B5%81%E7%A8%8B/"/>
-    <id>http://yoursite.com/2017/03/11/ironic-inspector流程/</id>
-    <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-03-11T14:02:10.000Z</updated>
-    
-    <summary type="html">
-    
-      介绍了ironic inspector的实现过程，包括ironic api的调用，ipa数据收集，inspector数据解析，上报.
-    
-    </summary>
-    
-      <category term="openstack" scheme="http://yoursite.com/categories/openstack/"/>
-    
-    
-      <category term="ironic" scheme="http://yoursite.com/tags/ironic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python测试框架nose使用</title>
-    <link href="http://yoursite.com/2017/03/11/nose%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/03/11/nose使用/</id>
-    <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-03-11T13:50:28.000Z</updated>
-    
-    <summary type="html">
-    
-      介绍了python测试框架nose的基本用法.
-    
-    </summary>
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="mac" scheme="https://leetpy.github.io/tags/mac/"/>
     
   </entry>
   
   <entry>
     <title>python ironic client使用</title>
-    <link href="http://yoursite.com/2017/03/11/python-ironic-client%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/03/11/python-ironic-client使用/</id>
+    <link href="https://leetpy.github.io/2017/03/11/python-ironic-client%E4%BD%BF%E7%94%A8/"/>
+    <id>https://leetpy.github.io/2017/03/11/python-ironic-client使用/</id>
     <published>2017-03-11T08:05:14.000Z</published>
     <updated>2017-03-11T14:02:22.000Z</updated>
     
@@ -342,17 +262,97 @@
     
     </summary>
     
-      <category term="openstack" scheme="http://yoursite.com/categories/openstack/"/>
+      <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
     
     
-      <category term="ironic" scheme="http://yoursite.com/tags/ironic/"/>
+      <category term="ironic" scheme="https://leetpy.github.io/tags/ironic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac使用</title>
+    <link href="https://leetpy.github.io/2017/03/11/mac%E4%BD%BF%E7%94%A8/"/>
+    <id>https://leetpy.github.io/2017/03/11/mac使用/</id>
+    <published>2017-03-11T08:05:14.000Z</published>
+    <updated>2017-04-02T07:54:47.000Z</updated>
+    
+    <summary type="html">
+    
+      mac使用.
+    
+    </summary>
+    
+      <category term="mac" scheme="https://leetpy.github.io/categories/mac/"/>
+    
+    
+      <category term="mac" scheme="https://leetpy.github.io/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python测试框架nose使用</title>
+    <link href="https://leetpy.github.io/2017/03/11/nose%E4%BD%BF%E7%94%A8/"/>
+    <id>https://leetpy.github.io/2017/03/11/nose使用/</id>
+    <published>2017-03-11T08:05:14.000Z</published>
+    <updated>2017-03-11T13:50:28.000Z</updated>
+    
+    <summary type="html">
+    
+      介绍了python测试框架nose的基本用法.
+    
+    </summary>
+    
+      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://leetpy.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python with语句</title>
+    <link href="https://leetpy.github.io/2017/03/11/python%20with%E8%AF%AD%E5%8F%A5/"/>
+    <id>https://leetpy.github.io/2017/03/11/python with语句/</id>
+    <published>2017-03-11T08:05:14.000Z</published>
+    <updated>2017-04-16T07:06:27.000Z</updated>
+    
+    <summary type="html">
+    
+      介绍了python测试框架nose的基本用法.
+    
+    </summary>
+    
+      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://leetpy.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ironic inspector流程</title>
+    <link href="https://leetpy.github.io/2017/03/11/ironic-inspector%E6%B5%81%E7%A8%8B/"/>
+    <id>https://leetpy.github.io/2017/03/11/ironic-inspector流程/</id>
+    <published>2017-03-11T08:05:14.000Z</published>
+    <updated>2017-03-11T14:02:10.000Z</updated>
+    
+    <summary type="html">
+    
+      介绍了ironic inspector的实现过程，包括ironic api的调用，ipa数据收集，inspector数据解析，上报.
+    
+    </summary>
+    
+      <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
+    
+    
+      <category term="ironic" scheme="https://leetpy.github.io/tags/ironic/"/>
     
   </entry>
   
   <entry>
     <title>leetcode Add Two Numbers</title>
-    <link href="http://yoursite.com/2016/09/11/leetcode-002/"/>
-    <id>http://yoursite.com/2016/09/11/leetcode-002/</id>
+    <link href="https://leetpy.github.io/2016/09/11/leetcode-002/"/>
+    <id>https://leetpy.github.io/2016/09/11/leetcode-002/</id>
     <published>2016-09-10T16:00:00.000Z</published>
     <updated>2017-03-12T02:01:36.000Z</updated>
     
@@ -362,17 +362,17 @@
     
     </summary>
     
-      <category term="algorithm" scheme="http://yoursite.com/categories/algorithm/"/>
+      <category term="algorithm" scheme="https://leetpy.github.io/categories/algorithm/"/>
     
     
-      <category term="leetcode" scheme="http://yoursite.com/tags/leetcode/"/>
+      <category term="leetcode" scheme="https://leetpy.github.io/tags/leetcode/"/>
     
   </entry>
   
   <entry>
     <title>openstack代码提交</title>
-    <link href="http://yoursite.com/2016/09/07/%E5%90%91%E7%A4%BE%E5%8C%BA%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81/"/>
-    <id>http://yoursite.com/2016/09/07/向社区提交代码/</id>
+    <link href="https://leetpy.github.io/2016/09/07/%E5%90%91%E7%A4%BE%E5%8C%BA%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81/"/>
+    <id>https://leetpy.github.io/2016/09/07/向社区提交代码/</id>
     <published>2016-09-06T16:00:00.000Z</published>
     <updated>2017-04-16T07:08:55.000Z</updated>
     
@@ -382,30 +382,30 @@
     
     </summary>
     
-      <category term="openstack" scheme="http://yoursite.com/categories/openstack/"/>
+      <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
     
     
-      <category term="openstack" scheme="http://yoursite.com/tags/openstack/"/>
+      <category term="openstack" scheme="https://leetpy.github.io/tags/openstack/"/>
     
   </entry>
   
   <entry>
-    <title>task_manager</title>
-    <link href="http://yoursite.com/2016/09/07/ironic-task_manager%E5%88%86%E6%9E%90/"/>
-    <id>http://yoursite.com/2016/09/07/ironic-task_manager分析/</id>
+    <title>leetcode Two Sum</title>
+    <link href="https://leetpy.github.io/2016/09/07/leetcode-001/"/>
+    <id>https://leetpy.github.io/2016/09/07/leetcode-001/</id>
     <published>2016-09-06T16:00:00.000Z</published>
-    <updated>2017-04-16T07:07:40.000Z</updated>
+    <updated>2017-03-11T14:01:52.000Z</updated>
     
     <summary type="html">
     
-      ironic task_manager介绍
+      两个数的和。
     
     </summary>
     
-      <category term="algorithm" scheme="http://yoursite.com/categories/algorithm/"/>
+      <category term="algorithm" scheme="https://leetpy.github.io/categories/algorithm/"/>
     
     
-      <category term="leetcode" scheme="http://yoursite.com/tags/leetcode/"/>
+      <category term="leetcode" scheme="https://leetpy.github.io/tags/leetcode/"/>
     
   </entry>
   
