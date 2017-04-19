@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leetpy.github.io/"/>
-  <updated>2017-04-16T12:26:13.000Z</updated>
+  <updated>2017-04-19T11:39:14.000Z</updated>
   <id>https://leetpy.github.io/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>qemu 镜像修改</title>
+    <link href="https://leetpy.github.io/2017/04/19/qemu-img/"/>
+    <id>https://leetpy.github.io/2017/04/19/qemu-img/</id>
+    <published>2017-04-19T11:29:50.000Z</published>
+    <updated>2017-04-19T11:39:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有时候当我们的qemu 镜像系统挂了或者是没有密码时，我们可以挂载qemu镜像，然后对镜像进行修改和文件备份。&lt;/p&gt;
+&lt;h2 id=&quot;挂载qcow2&quot;&gt;&lt;a href=&quot;#挂载qcow2&quot; class=&quot;headerlink&quot; title=&quot;挂载qcow2&quot;&gt;&lt;/a&gt;挂载
+    
+    </summary>
+    
+      <category term="kvm" scheme="https://leetpy.github.io/categories/kvm/"/>
+    
+    
+      <category term="qemu" scheme="https://leetpy.github.io/tags/qemu/"/>
+    
+  </entry>
   
   <entry>
     <title>《一个人的朝圣》读书笔记</title>
@@ -148,26 +169,6 @@
   </entry>
   
   <entry>
-    <title>异步I/O</title>
-    <link href="https://leetpy.github.io/2017/04/02/%E5%BC%82%E6%AD%A5IO/"/>
-    <id>https://leetpy.github.io/2017/04/02/异步IO/</id>
-    <published>2017-04-02T08:05:14.000Z</published>
-    <updated>2017-04-16T07:05:06.000Z</updated>
-    
-    <summary type="html">
-    
-      异步I/O.
-    
-    </summary>
-    
-      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
-    
-    
-      <category term="I/O" scheme="https://leetpy.github.io/tags/I-O/"/>
-    
-  </entry>
-  
-  <entry>
     <title>packstack安装openstack</title>
     <link href="https://leetpy.github.io/2017/04/02/packstack%E5%AE%89%E8%A3%85openstack/"/>
     <id>https://leetpy.github.io/2017/04/02/packstack安装openstack/</id>
@@ -184,6 +185,26 @@
     
     
       <category term="packstack" scheme="https://leetpy.github.io/tags/packstack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异步I/O</title>
+    <link href="https://leetpy.github.io/2017/04/02/%E5%BC%82%E6%AD%A5IO/"/>
+    <id>https://leetpy.github.io/2017/04/02/异步IO/</id>
+    <published>2017-04-02T08:05:14.000Z</published>
+    <updated>2017-04-16T07:05:06.000Z</updated>
+    
+    <summary type="html">
+    
+      异步I/O.
+    
+    </summary>
+    
+      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
+    
+    
+      <category term="I/O" scheme="https://leetpy.github.io/tags/I-O/"/>
     
   </entry>
   
@@ -228,57 +249,15 @@
   </entry>
   
   <entry>
-    <title>mac mysql启动配置</title>
-    <link href="https://leetpy.github.io/2017/03/11/mac%E4%B8%8B%E5%90%AF%E5%8A%A8mysql/"/>
-    <id>https://leetpy.github.io/2017/03/11/mac下启动mysql/</id>
+    <title>python ironic client使用</title>
+    <link href="https://leetpy.github.io/2017/03/11/python-ironic-client%E4%BD%BF%E7%94%A8/"/>
+    <id>https://leetpy.github.io/2017/03/11/python-ironic-client使用/</id>
     <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-03-11T13:56:35.000Z</updated>
+    <updated>2017-03-11T14:02:22.000Z</updated>
     
     <summary type="html">
     
-      mac mysql启动配置.
-    
-    </summary>
-    
-      <category term="mac" scheme="https://leetpy.github.io/categories/mac/"/>
-    
-    
-      <category term="mysql" scheme="https://leetpy.github.io/tags/mysql/"/>
-    
-      <category term="mac" scheme="https://leetpy.github.io/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python with语句</title>
-    <link href="https://leetpy.github.io/2017/03/11/python%20with%E8%AF%AD%E5%8F%A5/"/>
-    <id>https://leetpy.github.io/2017/03/11/python with语句/</id>
-    <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-04-16T07:06:27.000Z</updated>
-    
-    <summary type="html">
-    
-      介绍了python测试框架nose的基本用法.
-    
-    </summary>
-    
-      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://leetpy.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ironic inspector流程</title>
-    <link href="https://leetpy.github.io/2017/03/11/ironic-inspector%E6%B5%81%E7%A8%8B/"/>
-    <id>https://leetpy.github.io/2017/03/11/ironic-inspector流程/</id>
-    <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-03-11T14:02:10.000Z</updated>
-    
-    <summary type="html">
-    
-      介绍了ironic inspector的实现过程，包括ironic api的调用，ipa数据收集，inspector数据解析，上报.
+      介绍了ironic client的基本用法.
     
     </summary>
     
@@ -330,15 +309,15 @@
   </entry>
   
   <entry>
-    <title>python ironic client使用</title>
-    <link href="https://leetpy.github.io/2017/03/11/python-ironic-client%E4%BD%BF%E7%94%A8/"/>
-    <id>https://leetpy.github.io/2017/03/11/python-ironic-client使用/</id>
+    <title>ironic inspector流程</title>
+    <link href="https://leetpy.github.io/2017/03/11/ironic-inspector%E6%B5%81%E7%A8%8B/"/>
+    <id>https://leetpy.github.io/2017/03/11/ironic-inspector流程/</id>
     <published>2017-03-11T08:05:14.000Z</published>
-    <updated>2017-03-11T14:02:22.000Z</updated>
+    <updated>2017-03-11T14:02:10.000Z</updated>
     
     <summary type="html">
     
-      介绍了ironic client的基本用法.
+      介绍了ironic inspector的实现过程，包括ironic api的调用，ipa数据收集，inspector数据解析，上报.
     
     </summary>
     
@@ -346,6 +325,48 @@
     
     
       <category term="ironic" scheme="https://leetpy.github.io/tags/ironic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python with语句</title>
+    <link href="https://leetpy.github.io/2017/03/11/python%20with%E8%AF%AD%E5%8F%A5/"/>
+    <id>https://leetpy.github.io/2017/03/11/python with语句/</id>
+    <published>2017-03-11T08:05:14.000Z</published>
+    <updated>2017-04-16T07:06:27.000Z</updated>
+    
+    <summary type="html">
+    
+      介绍了python测试框架nose的基本用法.
+    
+    </summary>
+    
+      <category term="python" scheme="https://leetpy.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://leetpy.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac mysql启动配置</title>
+    <link href="https://leetpy.github.io/2017/03/11/mac%E4%B8%8B%E5%90%AF%E5%8A%A8mysql/"/>
+    <id>https://leetpy.github.io/2017/03/11/mac下启动mysql/</id>
+    <published>2017-03-11T08:05:14.000Z</published>
+    <updated>2017-03-11T13:56:35.000Z</updated>
+    
+    <summary type="html">
+    
+      mac mysql启动配置.
+    
+    </summary>
+    
+      <category term="mac" scheme="https://leetpy.github.io/categories/mac/"/>
+    
+    
+      <category term="mysql" scheme="https://leetpy.github.io/tags/mysql/"/>
+    
+      <category term="mac" scheme="https://leetpy.github.io/tags/mac/"/>
     
   </entry>
   
@@ -385,26 +406,6 @@
     
       <category term="openstack" scheme="https://leetpy.github.io/categories/openstack/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>task_manager</title>
-    <link href="https://leetpy.github.io/2016/09/07/ironic-task_manager%E5%88%86%E6%9E%90/"/>
-    <id>https://leetpy.github.io/2016/09/07/ironic-task_manager分析/</id>
-    <published>2016-09-06T16:00:00.000Z</published>
-    <updated>2017-04-16T07:07:40.000Z</updated>
-    
-    <summary type="html">
-    
-      ironic task_manager介绍
-    
-    </summary>
-    
-      <category term="algorithm" scheme="https://leetpy.github.io/categories/algorithm/"/>
-    
-    
-      <category term="leetcode" scheme="https://leetpy.github.io/tags/leetcode/"/>
     
   </entry>
   
